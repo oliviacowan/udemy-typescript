@@ -23,3 +23,11 @@ const myCars = carMakers.pop();
 carMakers.map((car: string): string => {
   return car;
 })
+
+// Flexible types
+const importantDates = [new Date(), '2030-10-10'];
+
+importantDates.push('2030-09-07');
+importantDates.push(new Date());
+// importantDates.push(8) gives error
+
